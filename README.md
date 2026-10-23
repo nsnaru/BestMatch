@@ -20,4 +20,16 @@ BestMatch is a Python package that determines the closest matches for a given se
 
 Here is the plot from `demo/diamonds.py`:
 
-![](demo/diamonds.png)
+![Plot](demo/diamonds.png)
+
+
+## Example Code
+
+```python
+
+## Example Plot
+
+Here is the plot from `demo/diamonds.py`:
+
+![Plot](demo/diamonds.png)
+```
