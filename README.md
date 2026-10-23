@@ -49,6 +49,5 @@ relevant = bm.find_relevant(reference, diamond_list, 100)
 
 # Plot the reference point and the top 100 search results, highlighting the top 10.
 fig, ax = bm.plot_best(relevant, reference, ['depth', 'price'], 10)
-
 bm.show()
 ```
