@@ -25,6 +25,8 @@ Here is the plot from `demo/diamonds.py`:
 
 ## Example Code
 
+From `demo/diamonds.py`.
+
 ```python
 import BestMatch as bm
 
