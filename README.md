@@ -1,4 +1,4 @@
-# BestMatch
+# BestMatch (MA52109 – Computational Lab 02 submission)
 ## Introduction
 
 BestMatch is a Python package that determines the closest entries of a dataset to a set of reference parameters. It can also plot these matches on a graph, highlighting the top matches. 
