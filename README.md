@@ -30,6 +30,4 @@ Here is the plot from `demo/diamonds.py`:
 ## Example Plot
 
 Here is the plot from `demo/diamonds.py`:
-
-![Plot](demo/diamonds.png)
 ```
