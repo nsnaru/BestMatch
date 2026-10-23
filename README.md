@@ -10,7 +10,7 @@ BestMatch is a Python package that determines the closest matches for a given se
 
 - `extract_date_add_year(dict_list, column)` accepts a list of dictionaries (`dict_list`) with a date parameter (`column`), formatted as either DD/MM/YYYY or MM/DD/YYYY. It extracts the year as an integer and places it in a new column, `year`. This is useful for processing untidy data.
 
-- `find_relevant(dict_ref, dict_list_all, top_n)` accepts a reference set of attributes presented as a dictionary (`dict_ref`), with key names in common with a target dataset (`dict_list_all`). The proximity between the reference attributes and target attributes is calculated, the closest `top_n` results are then returned as a list of dictionaries (i.e. a list of 'rows').
+- `find_relevant(dict_ref, dict_list_all, top_n)` accepts a reference set of attributes presented as a dictionary (`dict_ref`), with key names in common with a target dataset (`dict_list_all`). The proximity between the reference attributes and target attributes is calculated, the closest `top_n` results are then returned as a list of dictionaries (i.e. a list of 'rows'). Can be used with any number of attributes (so you can compare any number of features).
 
 ### BestMatch.plot
 
