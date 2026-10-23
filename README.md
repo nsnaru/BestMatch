@@ -2,3 +2,22 @@
 ## Introduction
 
 BestMatch is a Python package that determines the closest matches for a given set of attributes from a dataset. It can also plot these matches on a graph, highlighting the top matches. 
+
+## Main Functionality
+### BestMatch.search
+
+- `csv_to_dict_list(location)` accepts a CSV file location and returns a list of dictionaries, where key names match the column headers in the CSV file. Each dictionary is like a row in a table.
+
+- `extract_date_add_year(dict_list, column)` accepts a list of dictionaries (`dict_list`) with a date parameter (`column`), formatted as either DD/MM/YYYY or MM/DD/YYYY. It extracts the year as an integer and places it in a new column, `year`. This is useful for processing untidy data.
+
+- `find_relevant(dict_ref, dict_list_all, top_n)` accepts a reference set of attributes presented as a dictionary (`dict_ref`), with key names in common with a target dataset (`dict_list_all`). The proximity between the reference attributes and target attributes is calculated, the closest `top_n` results are then returned.
+
+### BestMatch.plot
+
+- `plot_best(dict_list, dict_list_ref, keys, n)` accepts a list of two key names (`keys`), and plots their values from `dict_list`. The reference attributes are also plotted via `dict_list_ref` to better understand proximity. The `n` closest values are highlighted differently to the rest of the plotted points.
+
+## Example Plot
+
+Here is the plot from `demo/diamonds.py`:
+
+![](demo/diamonds.png)

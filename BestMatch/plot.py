@@ -14,21 +14,27 @@ def plot_best(dict_list, dict_list_ref, keys, n):
     # All points.
     ax.scatter(x,
                y,
-               color='lightgray',
+               marker='x',
+               linewidths=0.7,
+               color='gray',
                label=f'Top {len(dict_list) - n} by proximity'
     )
     # Top n points.
     ax.scatter(
         x[0:n],
         y[0:n],
-        color='tab:red',
+        marker='x',
+        linewidths=0.7,
+        color='blue',
         label=f'Top {n} by proximity'
     )
     # Reference point.
     ax.scatter(
         dict_list_ref[keys[0]],
         dict_list_ref[keys[1]],
-        color='yellow',
+        marker='x',
+        linewidths=0.7,
+        color='red',
         label=f'Reference Point'
     )
 
