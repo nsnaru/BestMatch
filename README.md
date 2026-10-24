@@ -24,14 +24,7 @@ python pip install -e .
 
 - `plot_best(dict_list, dict_list_ref, keys, n)` accepts a list of two key names (`keys`), and plots their values from `dict_list`. The reference attributes are also plotted via `dict_list_ref` to better understand proximity. The `n` closest values are highlighted differently to the rest of the plotted points.
 
-## Example Plot
-
-Here is the plot from `demo/diamonds.py`:
-
-![Plot](demo/diamonds.png)
-
-
-## Example Code
+## Example Code & Plot
 
 From `demo/diamonds.py`:
 
@@ -51,3 +44,9 @@ relevant = bm.find_relevant(reference, diamond_list, 100)
 fig, ax = bm.plot_best(relevant, reference, ['depth', 'price'], 10)
 bm.show()
 ```
+
+This produces the following plot:
+
+![Plot](demo/diamonds.png)
+
+As you can see, the search term (`reference`) is highlighted in red.
