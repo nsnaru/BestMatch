@@ -12,12 +12,13 @@ def plot_best(dict_list, dict_list_ref, keys, n):
     fig, ax = plt.subplots()
 
     # All points.
-    ax.scatter(x,
-               y,
-               marker='x',
-               linewidths=0.7,
-               color='gray',
-               label=f'Top {len(dict_list) - n} by proximity'
+    ax.scatter(
+        x,
+        y,
+        marker='x',
+        linewidths=0.7,
+        color='gray',
+        label=f'Top {len(dict_list) - n} by proximity'
     )
     # Top n points.
     ax.scatter(
