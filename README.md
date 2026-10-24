@@ -40,6 +40,9 @@ reference = {'depth': 62, 'price': 365}
 # Return top 100 search results.
 relevant = bm.find_relevant(reference, diamond_list, 100)
 
+# Print the closest match.
+print(relevant[0])
+
 # Plot the reference point and the top 100 search results, highlighting the top 10.
 fig, ax = bm.plot_best(relevant, reference, ['depth', 'price'], 10)
 bm.show()
@@ -49,4 +52,10 @@ This produces the following plot:
 
 ![Plot](demo/diamonds.png)
 
-As you can see, the search term (`reference`) is highlighted in red.
+As you can see, the search term (`reference`) is highlighted in red. The closest match is printed (`relevant[0]`) yielding the following:
+
+```
+{'carat': '0.32', 'cut': 'Premium', 'color': 'J', 'clarity': 'SI1', 'depth': '62.2', 'table': '59', 'price': '365', 'x': '4.37', 'y': '4.41', 'z': '2.73', 'prox': np.float64(0.20000000000000284)}
+```
+
+The last parameter, `prox`, is the closeness of the match (the smaller this figure, the closer the match). The list returned by `find_relevant` is sorted by this figure, from lowest to highest.

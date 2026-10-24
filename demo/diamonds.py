@@ -9,6 +9,9 @@ reference = {'depth': 62, 'price': 365}
 # Return top 100 search results.
 relevant = bm.find_relevant(reference, diamond_list, 100)
 
+# Print the closest match.
+print(relevant[0])
+
 # Plot the reference point and the top 100 search results, highlighting the top 10.
 fig, ax = bm.plot_best(relevant, reference, ['depth', 'price'], 10)
 bm.show()
