@@ -52,7 +52,7 @@ This produces the following plot:
 
 ![Plot](demo/diamonds.png)
 
-As you can see, the search term (`reference`) is highlighted in red. The closest match is printed (`relevant[0]`) yielding the following (scroll horizontally to see full result):
+The closest match (`relevant[0]`) is printed, yielding the following (scroll horizontally to see full result):
 
 ```
 {'carat': '0.32', 'cut': 'Premium', 'color': 'J', 'clarity': 'SI1', 'depth': '62.2', 'table': '59', 'price': '365', 'x': '4.37', 'y': '4.41', 'z': '2.73', 'prox': np.float64(0.20000000000000284)}
