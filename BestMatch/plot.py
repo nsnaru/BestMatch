@@ -18,7 +18,7 @@ def plot_best(dict_list, dict_list_ref, keys, n):
         marker='x',
         linewidths=0.7,
         color='gray',
-        label=f'Top {len(dict_list) - n} (excluding top {n}) by proximity'
+        label=f'Top {len(dict_list) - n} (excluding top {n})'
     )
     # Top n points.
     ax.scatter(
@@ -27,7 +27,7 @@ def plot_best(dict_list, dict_list_ref, keys, n):
         marker='x',
         linewidths=0.7,
         color='blue',
-        label=f'Top {n} by proximity'
+        label=f'Top {n}'
     )
     # Reference point.
     ax.scatter(
@@ -41,7 +41,7 @@ def plot_best(dict_list, dict_list_ref, keys, n):
 
     ax.set_xlabel(keys[0].capitalize())
     ax.set_ylabel(keys[1].capitalize())
-    ax.set_title('Closest to the Reference')
+    ax.set_title(f'Top {n} Data Points by Proximity to the Reference Point')
     ax.legend()
 
     return fig, ax

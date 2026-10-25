@@ -1,4 +1,4 @@
-# BestMatch (MA52109 – Computational Lab 02 submission)
+# BestMatch
 ## Introduction
 
 BestMatch is a Python package that can find the closest match from a dataset given a set of continuous/numerical search parameters. It does not consider each parameter in isolation, but together, in order to generate search results with the most relevance to the query. It can also plot these matches on a graph, highlighting the top results.
