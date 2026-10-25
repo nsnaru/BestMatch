@@ -41,7 +41,7 @@ def plot_best(dict_list, dict_list_ref, keys, n):
 
     ax.set_xlabel(keys[0].capitalize())
     ax.set_ylabel(keys[1].capitalize())
-    ax.set_title(f'Top {n} Data Points by Proximity to the Reference Point')
+    ax.set_title(f'Top {len(dict_list)} Data Points by Proximity to the Reference Point')
     ax.legend()
 
     return fig, ax
