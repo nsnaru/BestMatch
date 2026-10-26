@@ -63,3 +63,4 @@ The last parameter, `prox`, is the closeness of the match (the smaller this figu
 ## Improvements
 - Normalise search parameters' ranges for fairer results.
 - Save search results to CSV
+- Error handling.
