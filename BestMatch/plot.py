@@ -25,8 +25,8 @@ def plot_best(dict_list, dict_list_ref, keys, n):
         x[0:n],
         y[0:n],
         marker='x',
-        linewidths=0.7,
-        color='blue',
+        linewidths=1.2,
+        color='springgreen',
         label=f'Top {n}'
     )
     # Reference point.
@@ -34,8 +34,8 @@ def plot_best(dict_list, dict_list_ref, keys, n):
         dict_list_ref[keys[0]],
         dict_list_ref[keys[1]],
         marker='x',
-        linewidths=0.7,
-        color='red',
+        linewidths=1.2,
+        color='blue',
         label=f'Reference Point'
     )
 
