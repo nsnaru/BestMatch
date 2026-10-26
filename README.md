@@ -59,3 +59,7 @@ The closest match (`relevant[0]`) is printed, yielding the following (scroll hor
 ```
 
 The last parameter, `prox`, is the closeness of the match (the smaller this figure, the closer the match). The list returned by `find_relevant` is sorted by this figure, from lowest to highest.
+
+## Improvements
+- Normalise search parameters' ranges for fairer results.
+- Save search results to CSV
